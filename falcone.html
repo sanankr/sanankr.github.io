@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="falcone.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="falconeservice.js"></script>
+    <script src="falcone.js"></script>
+</head>
+
+<body>
+    <div class="fal-main">
+        <div class="fal-header">
+            <div class="fal-header-title">Finding Falcone</div>
+            <div class="fals-header-links">
+                <button name="reset" style="padding: 0px;color: black;background-color: transparent;border:none;box-shadow:none;">Reset</button>
+            </div>
+        </div>
+        <div class="fal-content">
+            <div class="fal-cntnr">
+                <div class="fal-cntnr-title">
+                    <h3>Select planets you want to search in</h3>
+                </div>
+                <div class="fal-cntnr-query">
+                    <div class="fal-cntnr-modes">
+                        <div class="fal-mode">
+                            <label name="fal-label-1" class="fal-label">Destination 1</label>
+                            <select name="fal-option">
+                                <option value="">Select</option>
+                            </select>
+                            <div name="fal-radio"></div>
+                        </div>
+                        <div class="fal-mode">
+                            <label name="fal-label-1" class="fal-label">Destination 2</label>
+                            <select name="fal-option">
+                                <option value="">Select</option>
+                            </select>
+                            <div name="fal-radio"></div>
+                        </div>
+                        <div class="fal-mode">
+                            <label name="fal-label-1" class="fal-label">Destination 3</label>
+                            <select name="fal-option">
+                                <option value="">Select</option>
+                            </select>
+                            <div name="fal-radio"></div>
+                        </div>
+                        <div class="fal-mode">
+                            <label name="fal-label-1" class="fal-label">Destination 4</label>
+                            <select name="fal-option">
+                                <option value="">Select</option>
+                            </select>
+                            <div name="fal-radio"></div>
+                        </div>
+                    </div>
+                    <div class="fal-cntnr-time">
+                        <span>Time taken:&nbsp;</span>
+                        <span>0</span>
+                    </div>
+                </div>
+                <div class="fal-find">
+                    <button name="findFalcone">Find Falcone</button>
+                </div>
+            </div>
+            <div class="fal-result fal-hidden">
+                <div class="fal-result-message">
+                    <div class="fal-message-title"></div>
+                    <div class="fal-result-report">
+                        <div class="fal-repo-time"></div>
+                        <div class="fal-repo-planet"></div>
+                    </div>
+                </div>
+                <div class="fal-result-btn">
+                    <button name="startAgain" class="btn-active">Start Again</button>
+                </div>
+            </div>
+        </div>
+        <div class="fal-footer">
+            <p>Developed by: Sanan kr</p>
+        </div>
+    </div>
+    <script>
+        init();
+    </script>
+</body>
+
+</html>
